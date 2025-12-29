@@ -1,0 +1,23 @@
+:root{
+  --bg:#ffffff;
+  --text:#111827;
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --container-width:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--text);background:var(--bg)}
+.container{max-width:var(--container-width);margin:0 auto;padding:1rem}
+.site-header{border-bottom:1px solid #e6e9ef}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{font-weight:700;color:var(--text);text-decoration:none}
+nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:4rem 0;text-align:left}
+.hero h1{font-size:2.25rem;margin:0 0 .5rem}
+.cta{display:inline-block;margin-top:1rem;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.projects{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.site-footer{border-top:1px solid #e6e9ef;padding:1rem 0;margin-top:2rem;color:var(--muted);font-size:.9rem}
+@media (max-width:600px){
+  .hero h1{font-size:1.6rem}
+  nav a{margin-left:.5rem;font-size:.9rem}
+}
