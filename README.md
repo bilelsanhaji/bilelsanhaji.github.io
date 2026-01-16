@@ -118,7 +118,7 @@ git push origin main
 
 ## 📄 License
 
-© 2025 Bilel Sanhaji. All rights reserved.
+© 2026 Bilel Sanhaji. All rights reserved.
 
 ## 🤝 Contact
 
