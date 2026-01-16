@@ -539,4 +539,12 @@ img {
     width: 18px;
     height: 18px;
     }
+
+    .social-links a:nth-child(1) svg {
+    transform: scale(0.85);
+    }
+
+    .social-links a:nth-child(3) svg {
+    transform: scale(0.75);
+    }
 }
