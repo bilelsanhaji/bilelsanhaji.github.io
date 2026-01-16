@@ -1,43 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A simple static site template">
-  <title>bilelsanhaji — Static Site</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilel Sanhaji - Associate Professor of Economics at Université Paris 8">
+    <title>Bilel Sanhaji - Home</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Bilel Sanhaji</a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-      <h1 class="site-title">Bilel Sanhaji</h1>
-      <p class="site-tag">Static site template</p>
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Bilel Sanhaji" class="profile-image">
+                <h3>Bilel Sanhaji</h3>
+                <p class="profile-title">Associate Professor (Maître de Conférence HDR) of Economics</p>
+                
+                <div class="profile-info">
+                    <p><strong>Location:</strong> France</p>
+                    <p><strong>Institution:</strong> Université Paris 8</p>
+                    <p><strong>Email:</strong> <a href="mailto:bilel.sanhaji@univ-paris8.fr">bilel.sanhaji@univ-paris8.fr</a></p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar">GS</a>
+                    <a href="https://orcid.org/0000-0003-0715-4697" target="_blank" title="ORCID">OR</a>
+                    <a href="https://www.researchgate.net/profile/Bilel-Sanhaji" target="_blank" title="ResearchGate">RG</a>
+                    <a href="https://github.com/bilelsanhaji" target="_blank" title="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/in/bilel-sanhaji-1a852282/" target="_blank" title="LinkedIn">LI</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="intro-section">
+                <h1>About Me</h1>
+                
+                <p>I am an <strong>Associate Professor (Maître de Conférence HDR) of Economics</strong> at <a href="https://www.univ-paris8.fr/" target="_blank">Université Paris 8 (Vincennes - Saint-Denis)</a>. I am a research affiliate at <a href="https://sites.google.com/site/up8led/home" target="_blank">Laboratoire d'Économie Dionysien</a> (LED, EA 3391).</p>
+
+                <p>I am also an <strong>Associate Editor</strong> of <em>Finance Research Letters</em>.</p>
+
+                <h2>Research Interests</h2>
+                <p>My research focuses on:</p>
+                <ul>
+                    <li><strong>Nonlinear time series econometrics</strong> and modeling volatility</li>
+                    <li><strong>Tests in multivariate conditional heteroskedastic models</strong></li>
+                    <li><strong>Score Driven Models</strong> (Generalized Autoregressive Score)</li>
+                    <li><strong>Financial econometrics</strong> with applications to cryptocurrencies and financial markets</li>
+                </ul>
+
+                <h2>Recent Highlights</h2>
+                <ul>
+                    <li>Published research on testing for time-varying smooth transition conditional covariance models in <em>Studies in Nonlinear Dynamics & Econometrics</em> (2025)</li>
+                    <li>Research on cryptocurrency volatility and machine learning applications in financial markets</li>
+                    <li>Ongoing work on BEKK models with covariance targeting and smooth transition</li>
+                </ul>
+
+                <h2>Teaching</h2>
+                <p>I teach courses in:</p>
+                <ul>
+                    <li>Financial Econometrics (Master level)</li>
+                    <li>Time Series Econometrics (Master level)</li>
+                    <li>Probability and Statistics</li>
+                    <li>Neural Networks</li>
+                    <li>Economic Analysis and Financial Mathematics</li>
+                </ul>
+
+                <p>For more details, please visit the <a href="teaching.html">Teaching</a> page.</p>
+
+                <h2>Contact</h2>
+                <p><strong>Bilel Sanhaji</strong><br>
+                Office: D117, Bat. D<br>
+                2 rue de la Liberté<br>
+                93526 Saint-Denis Cedex<br>
+                France<br>
+                Email: <a href="mailto:bilel.sanhaji@univ-paris8.fr">bilel.sanhaji@univ-paris8.fr</a></p>
+            </section>
+        </main>
     </div>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Welcome</h2>
-      <p>This is a minimal static site template ready to be published with GitHub Pages.</p>
-      <p>Edit <code>index.html</code> and the files in <code>assets/</code> to customize.</p>
-    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bilel Sanhaji. All rights reserved.</p>
+            <p>Last updated: January 2025</p>
+        </div>
+    </footer>
 
-    <section class="content">
-      <h3>Getting started</h3>
-      <ul>
-        <li>Modify the content in <code>index.html</code>.</li>
-        <li>Update styles in <code>assets/css/styles.css</code>.</li>
-        <li>Add interactivity in <code>assets/js/main.js</code>.</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Bilel Sanhaji</p>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js" defer></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
