@@ -6,20 +6,54 @@
     <title>V60 - Bilel Sanhaji</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
+        .container {
+            display: block;
+        }
+
         .main-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            max-width: none;
             padding: 0;
             height: calc(100vh - 70px); /* 70px ≈ hauteur navbar */
         }
-        .main-content iframe {
+
+        .v60-app {
+            flex: 1;
+            min-width: 0;
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .strava-activity {
+            flex: 0 0 300px;
+            width: 300px;
+            height: 160px;
+            border: none;
+        }
+
+        @media (max-width: 900px) {
+            .main-content {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .v60-app {
+                flex: none;
+                height: calc(100vh - 70px);
+            }
+
+            .strava-activity {
+                flex: none;
+                width: min(300px, 100%);
+            }
         }
     </style>
 </head>
 
 <body>
-    <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/46206565/activity-summary/c60be47df350a6bd1c9df2581df0675e4e44a2c3'></iframe>
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-brand">Bilel Sanhaji</a>
@@ -34,12 +68,10 @@
     </nav>
 
     <div class="container">
-        <aside class="sidebar">
-            <!-- ton sidebar existant -->
-        </aside>
-
         <main class="main-content">
-            <iframe src="https://bsanhaji.shinyapps.io/V60app/"></iframe>
+            <iframe class="v60-app" src="https://bsanhaji.shinyapps.io/V60app/"></iframe>
+            <iframe class="strava-activity" title="Résumé des activités Strava" scrolling="no"
+                src="https://www.strava.com/athletes/46206565/activity-summary/c60be47df350a6bd1c9df2581df0675e4e44a2c3"></iframe>
         </main>
     </div>
 
