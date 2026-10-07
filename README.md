@@ -13,7 +13,8 @@ bilelsanhaji.github.io/
 ├── index.html          # Home page
 ├── research.html       # Research and publications
 ├── teaching.html       # Teaching experience
-├── cv.html            # Curriculum Vitae
+├── cv.html             # Curriculum Vitae
+├── v60.html            # v60 shiny app
 ├── assets/
 │   ├── css/
 │   │   └── main.css   # Main stylesheet
